@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="recursos/styles.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <div class="div">
+      <form action="/index.html" method="get">
+        <img src="recursos/logoempresa.png" alt="logoempresa" />
+
+        <label for="correo-electronico">
+          <input
+            type="email"
+            id="correo-electronico"
+            name="correo"
+            placeholder="correo"
+          />
+        </label>
+
+        <label for="contraseña">
+          <input
+            type="password"
+            id="contraseña"
+            name="clave"
+            required
+            placeholder="contraseña"
+          />
+        </label>
+
+        <div class="checkbox-container">
+          <label><input type="checkbox" />Remenber me?</label>
+          <a href="#">Forgot password</a>
+        </div>
+
+        <button type="submit" id="ingresar">Login</button>
+      </form>
+      <button id="registro">
+        <a href="../pagina de registro/index.html">Registro</a>
+      </button>
+    </div>
+  </body>
+</html>

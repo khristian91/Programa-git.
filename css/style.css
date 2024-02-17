@@ -1,0 +1,185 @@
+:root {
+  --primario: #9c27b0;
+  --primarioOscuro: #89119d;
+  --secundario: #fff;
+  --secundarioOscuro: rgb(233, 287, 2);
+  --blanco: #fff;
+  --negro: #000;
+
+  --fuentePrincipal: "Staatliches", cursive;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /** 1rem = 10px **/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url(../img/2.avif);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--blanco);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.img_logo {
+  width: 60%;
+}
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--secundario);
+  font-family: var(--fuentePrincipal);
+}
+h1 {
+  font-size: 4rem;
+  margin-top: 6rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+/*Header*/
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+/*Footer*/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.473);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.footer__text {
+  font-family: var(--fuentePrincipal);
+  color: white;
+  font-size: 2.2rem;
+}
+.footer img {
+  width: 15%;
+  border-radius: 1rem;
+}
+/*Navegacion*/
+.navegacion {
+  box-shadow: 0 0 25px rgba(28, 125, 15, 255);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.navegacion input {
+  width: 40rem;
+  border-radius: 20px;
+  border: none;
+  padding: 1.1rem;
+}
+
+.navegacion__enlace {
+  font-family: var(--fuentePrincipal);
+  color: var(--blanco);
+  font-size: 2rem;
+}
+
+.navegacion__enlace:hover {
+  color: var(--secundario);
+}
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.producto {
+  background-color: rgba(39, 143, 25, 0.219);
+  padding: 1rem;
+}
+
+.producto__nombre {
+  font-size: 4rem;
+  color: var(--secundario);
+}
+.producto__precio {
+  font-size: 2.8rem;
+  color: var(--secundario);
+}
+
+.producto__nombre,
+.producto__precio {
+  font-family: var(--fuentePrincipal);
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .camisa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.link-menu {
+  display: flex;
+  column-gap: inherit;
+  align-items: center;
+}
+.nav2 {
+  color: rgba(255, 255, 255, 0.445);
+  box-shadow: none;
+  justify-content: center;
+}
+.navegacion__icono {
+  display: flex;
+  align-items: center;
+
+  width: min-content;
+}
+
+nav {
+  display: flex;
+  gap: 5rem;
+}
+.itens_navegacion {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.itens_navegacion img {
+  width: 3.5rem;
+}
